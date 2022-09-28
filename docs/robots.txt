@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://kiranfoundation.org.uk/sitemap.xml
