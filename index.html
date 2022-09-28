@@ -1,0 +1,150 @@
+---
+layout: default
+title: Kiran Foundation
+---
+<header>
+	<div class="container">
+		<div class="column">
+			<div>
+				<h1 class="editable">Never Stop Learning</h1>
+				<p class="editable">Learning is the best way to progress and reach your full potential.</p>
+				<!--div class="button">
+					<a href="#donate">Donate Now</a>
+				</div-->
+			</div>
+		</div>
+		<div class="column">
+			<img src="{{ site.baseurl }}/images/brain.jpg" alt="Sheep">
+		</div>
+	</div>
+</header>
+
+<div class="container">
+	<h2 class="editable" style="text-align: center;">What we do?</h2>
+
+	<ul class="thirds">
+		<li>
+			<div class="image">{% include icons/site.html icon="star" %}</div>
+			<h3 class="editable">Scholarship</h3>
+			<p class="editable"> Scholarships and grants for higher education for people believing in non-violence in UK and in the other commonwealth countries. </p>
+		</li>
+
+		<li>
+			<div class="image">{% include icons/site.html icon="class" %}</div>
+			<h3 class="editable">Classes</h3>
+			<p class="editable">High quality affordable Vocational courses for Children and Young people.</p>
+		</li>
+
+		<li>
+			<div class="image">{% include icons/site.html icon="training" %}</div>
+			<h3 class="editable">Training</h3>
+			<p class="editable">Advance Learning for people who are no longer in full time education or employment.</p>
+		</li>
+	</ul>
+</div>
+
+<div class="container">
+	<div class="columns">
+		<div>
+			<img src="{{ site.baseurl }}/images/mission.jpg" alt="Sheep">
+		</div>
+		<div>
+			<h2 class="editable">Our Mission</h2>
+
+			<p class="editable">Our mission is to support individuals from underprivileged and marginalised section of society in education and skill training, so they can reach their full potential.   They are forced by circumstances to battle harsh realities of life at the cost of their future. We support such kids via following two programs:
+			</p>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<hr>
+	<div class="columns">
+		<div>
+			<h2 class="editable">Scholarship</h2>
+			<p class="editable">We provide scholarship to students from underprivileged and marginalised families. We also assist them in finding and applying for various scholarships and higher education grants available via various organisations. Selection Process:
+			</p>
+		</div>
+		<div>
+			<img src="{{ site.baseurl }}/images/scholarship.jpg" alt="Sheep">
+		</div>
+	<!--blockquote>
+		<p class="quote editable">The ultimate measure of a sheep is not where he stands in moments of comfort and convenience, but where he stands at times of challenge and controversy.</p>
+		<div class="attribute">
+			<p class="meta">
+				<span class="image"><img class="editable" src="{{ site.baseurl }}/images/wooly.jpg" alt="Wooly"></span>
+				<span class="author editable"><strong>Wooly McBaa</strong></span>
+			</p>
+		</div>
+	</blockquote-->
+	<hr>
+</div>
+
+<div class="container">
+	<hr>
+	<div class="columns">
+		<div>
+			<img src="{{ site.baseurl }}/images/workshop.png" alt="Sheep">
+		</div>
+		<div>
+			<h2 class="editable">Workshops & Courses</h2>
+
+			<p class="editable">We conduct skill training workshops that enhance employability. These are mainly digital skills that enhance not only employability but helps self employed in enhancing their business prospects. 
+			</p>
+		</div>
+	</div>
+</div>
+<div class="container">
+	<div class="columns">
+		<div>
+			<h2 class="editable">Our Trainers</h2>
+			<p class="editable">We provide scholarship to students from underprivileged and marginalised families. We also assist them in finding and applying for various scholarships and higher education grants available via various organisations.
+			</p>
+		</div>
+		<div>
+			<img src="{{ site.baseurl }}/images/trainer.png" alt="Sheep">
+		</div>
+	<hr>
+</div>
+
+
+
+<div class="darker">
+	<div class="container">
+		<h2 class="editable">Join us</h2>
+		<p class="editable" style="text-align: center;">Sign up to hear  about our latest programs.</p>
+		<form action="{{ site.newsletter_action }}" method="post">
+			<input type="text" name="EMAIL" placeholder="Email">
+			<input type="submit" value="Sign up"/>
+		</form>
+	</div>
+</div>
+
+<!--div class="container" id="donate">
+	<h2 class="editable">Make a donation</h2>
+	<div class="donate">
+		{{ site.donation_embed }}
+	</div>
+</div-->
+
+<div class="darker">
+		<hr>
+	<div class="container">
+		<h2 class="editable">Past Courses</h2>
+		<p class="editor-link"><a href="cloudcannon:collections/_posts" class="btn"><strong>&#9998;</strong> Add Update</a></p>
+		<div class="posts">
+			{% for post in site.posts %}
+				<div class="post">
+					<div class="image" style="background-image: url({{ post.featured_image}})"></div>
+					<div class="post-content">
+						<p class="date">{{ post.date | date: '%B %d, %Y' }}</p>
+						<h3>{{ post.title }}</h3>
+
+						{{ post.content }}
+						<p class="editor-link"><a href="cloudcannon:collections/{{ post.path }}" class="btn"><strong>&#9998;</strong> Edit Update</a></p>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>
